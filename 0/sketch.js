@@ -42,8 +42,8 @@ class Particle {
   constructor(volume) {
     this.pos = createVector(random(width), random(height));
     this.size = random(2, 5) + map(volume, 0, 0.5, 1, 30);
-    this.alpha = map(volume, 0, 0.5, 50, 255); // 透明度随音量变化
-    this.color = color(255, random(200, 255), 0, this.alpha); // 保持白到黄色渐变
+    this.alpha = map(volume, 0, 0.5, 0, 255); // 透明度随音量变化
+    this.color = color(255, 255, 255, this.alpha); 
     this.lifespan = 255;
   }
 
