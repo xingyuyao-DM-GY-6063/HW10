@@ -12,9 +12,6 @@ The energy of the high frequency part determines the density of the particles.
 - **Dynamic particle effect**:
 Particles disappear over time and new particles are created.
 
-- Add P5.sound library link:
-<script src="https://cdn.jsdelivr.net/npm/p5@1.7.0/lib/addons/p5.sound.js"></script>
-
 
 ## HW10B
 - **Demo**:
