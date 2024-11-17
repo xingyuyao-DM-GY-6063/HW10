@@ -24,7 +24,7 @@ function draw() {
 
   // Paint the clouds
   let step = floor(peaks.length / 10000); 
-  for (let i = 0; i < 200; i++) {
+  for (let i = 0; i < 100; i++) {
     let peakValue = peaks[i * step]; 
     let x = random(width); // Random cloud location
     let y = random(height);
