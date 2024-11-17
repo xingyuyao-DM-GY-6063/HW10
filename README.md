@@ -15,8 +15,6 @@ Particles disappear over time and new particles are created.
 - Add P5.sound library link:
 <script src="https://cdn.jsdelivr.net/npm/p5@1.7.0/lib/addons/p5.sound.js"></script>
 
-By putting different sketch.js and index.html files in directories we can more easily switch between multiple experiments.
-
 
 ## HW10B
 - **Demo**:
