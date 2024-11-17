@@ -1,7 +1,7 @@
 # HW10
 ## HW10A
 The Chinese name of the music I chose is *数星星*, and the English definition is *counting stars*. 
-So I want to achieve a similar effect of the starry sky in the job HW10A.
+So I want to achieve a similar effect of the starry sky in HW10A.
 
 - **The particle colour is associated with the volume**:
 The higher the volume, the brighter the particles are, and the colour transitions from white to yellow.
