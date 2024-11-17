@@ -15,23 +15,23 @@ function preload() {
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  peaks = song.getPeaks(); // 获取峰值数据
+  peaks = song.getPeaks(); 
   noLoop();
 }
 
 function draw() {
-  background(245, 242, 224); // 中国画风背景色，类似宣纸
+  background(245, 242, 224); // Chinese painting style background colour, similar to rice paper
 
   // Paint the clouds
-  let step = floor(peaks.length / 10000); // 减少云雾的密度
-  for (let i = 0; i < 800; i++) {
-    let peakValue = peaks[i * step]; // 当前步长的峰值
+  let step = floor(peaks.length / 10000); 
+  for (let i = 0; i < 200; i++) {
+    let peakValue = peaks[i * step]; 
     let x = random(width); // Random cloud location
     let y = random(height);
     drawCloud(x, y, peakValue); 
 
-    // 每隔一定数量绘制花朵
-    if (i % 50 === 0) {
+    // Draw flowers at regular intervals
+    if (i % 10 === 0) {
       drawFlower(x, y, peakValue);
     }
   }

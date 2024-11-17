@@ -9,16 +9,16 @@ function preload() {
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  song.loop(); // 自动播放
+  song.loop(); 
   amp = new p5.Amplitude();
   fft = new p5.FFT();
 }
 
 function draw() {
-  background(0, 50); // 黑色背景，带透明度
+  background(0, 50); 
 
-  let volume = amp.getLevel(); // 获取音量
-  let spectrum = fft.analyze(); // 获取频谱数据
+  let volume = amp.getLevel(); 
+  let spectrum = fft.analyze(); 
 
   let highFreq = spectrum.reduce((sum, val, idx) => idx > spectrum.length / 2 ? sum + val : sum, 0);
 
